@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Assignment</title>
+</head>
+<body>
+    <header>
+        <div class="header__top-box">
+            <div class="header__logo-box">
+                <img src="./img/logo.png" alt="logo" class="header__logo">
+                <p class="header__logo-text">Powered By <span class="header__logo-text--blue">Finstreet</span></p>
+            </div>
+
+            <div class="header__action-box">
+                <div class="header__action-container">
+                    <select name="currency" id="currency" class="header__action-btn-dropdown">
+                        <option value="BTC" class="header__action-item">BTC</option>
+                    </select>
+    
+                    <select name="currency-crypto" id="currency-crypto" class="header__action-btn-dropdown">
+                        <option value="BTC" class="header__action-item">BTC</option>
+                        <option value="ETH" class="header__action-item">ETH</option>
+                        <option value="USDI" class="header__action-item">USDI</option>
+                        <option value="XRP" class="header__action-item">XRP</option>
+                    </select>
+    
+                    <button class="header__action-btn">BUY BTC</button>
+                </div>
+            </div>
+
+            <div class="header__social-box">
+                <button class="header__social-btn">
+                    <img src="./img/telegram.png" alt="Telegram Icon" class="header__social-icon">
+                    Connect Telegram
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-stage">
+            <h1 class="stage__heading">Best Price to Trade</h1>
+
+            <div class="stage">
+                <div class="stage__left">
+                    <div class="stage-secondary">
+                        <p class="stage-secondary__percent">0.48 %</p>
+                        <p class="stage-secondary__text">5 Mins</p>
+                    </div>
+
+                    <div class="stage-secondary">
+                        <p class="stage-secondary__percent">1.04 %</p>
+                        <p class="stage-secondary__text">1 Hour</p>
+                    </div>  
+                </div>
+
+                <div class="stage__center">
+                    <p class="stage__best-price">₹ 30,94,698</p>
+                    <p class="stage-secondary__text">Average BTC/INR net price including commission</p>
+                </div>
+
+                <div class="stage__right">
+                    <div class="stage-secondary">
+                        <p class="stage-secondary__percent">2.6 %</p>
+                        <p class="stage-secondary__text">1 Day</p>
+                    </div>
+
+                    <div class="stage-secondary">
+                        <p class="stage-secondary__percent">6.29 %</p>
+                        <p class="stage-secondary__text">7 Days</p>
+                    </div>  
+                </div>  
+            </div>
+
+            <div class="stage__sponsor-container">
+                <img src="./img/banner.png" alt="Banner Sponsor" class="stage__sponsor-image">
+            </div>
+            
+        </section>
+
+        <section class="section-table">
+            <table class="table">
+                <thead class="table-head">
+                    <tr>
+                        <td>#</td>
+                        <td>Name</td>
+                        <td>Last</td>
+                        <td>Buy / Sell Price</td>
+                        <td>Volume</td>
+                        <td>Base Unit</td>
+                    </tr>
+                </thead>
+                <tbody class="table-body" id="table">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>BTC/INR</td>
+                        <td>2,587,560</td>
+                        <td>₹ 30,94,698 / ₹ 29,94,897</td>
+                        <td>286.1729</td>
+                        <td>btc</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>BTC/INR</td>
+                        <td>2,587,560</td>
+                        <td>₹ 30,94,698 / ₹ 29,94,897</td>
+                        <td>286.1729</td>
+                        <td>btc</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>BTC/INR</td>
+                        <td>2,587,560</td>
+                        <td>₹ 30,94,698 / ₹ 29,94,897</td>
+                        <td>286.1729</td>
+                        <td>btc</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>BTC/INR</td>
+                        <td>2,587,560</td>
+                        <td>₹ 30,94,698 / ₹ 29,94,897</td>
+                        <td>286.1729</td>
+                        <td>btc</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__banner-box">
+            <img src="./img/banner-footer.jpg" alt="Footer Banner" class="footer__banner-img">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
